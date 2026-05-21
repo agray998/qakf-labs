@@ -10,6 +10,7 @@ sudo kind export kubeconfig --name qakf-kind
 
 # create utility pod (for curling pods etc)
 kubectl run alpine --image=alpine -- sleep infinity
+sleep 10
 kubectl exec alpine -- sh -c "apk update && apk add curl"
 
 echo "pod/alpine created - to curl pods/services run 'kubectl exec alpine -- curl http://<IP or DNS name>'"
