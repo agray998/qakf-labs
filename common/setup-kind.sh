@@ -2,7 +2,7 @@
 
 # ensure time is allowed for cluster to provision
 echo "Waiting for cluster..."
-sleep 60
+sleep 180
 
 # generate kubeconfig
 echo "Generating kubeconfig for Kind cluster 'qakf-kind'"
